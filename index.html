@@ -1,0 +1,129 @@
+<DOCTYPE! html>
+<html>
+<head>
+<title>login form</title>
+<style type="text/css">
+*{
+   box-sizing:border-box;
+   margin:0;
+   padding:0;
+   }
+body{
+     background:rgba(240,240,240,0.4);
+}
+h2{
+    text-align:left;
+    color:green;
+    margin:10px;
+    }
+.login-btn  {
+     color:white;
+     padding:5px;
+     width:20%;
+     margin:10px;
+     background:blue;
+     font-weight:bolder;
+     border:1px solid black;
+     border-radius:10px;
+     }
+   .form-card {
+       padding:10px;
+       background:gray;
+       display:flex;
+       flex-direction:column;
+       justify-content:center;
+       align-items:center;
+      max-width:300px;
+       margin:auto;
+       border-radius:10px;
+       box-shadow:0  15px  20px black,
+       1px -1px 5px 1px blue;
+       }
+     
+      
+      
+     .form-card img{
+          width:30%;
+          height:auto;
+          border:2px solid black;
+          border-radius:50%;
+          transition:0.3s;
+          }
+       img:hover{
+          /* transform:skew(170deg);*/
+           box-shadow:2px 2px 10px 2px black;
+           transform:scale(1.1);
+           transition:0.4s;
+           border:2px double blue;
+           }
+      form{
+         padding:10px;   
+         }
+         label{
+             font-weight:bolder;
+             }
+       form .input{
+      margin:10px 0;
+          width:100%;
+          padding:10px;
+          border-radius:5px;
+          border:2px solid black;
+          outline:none;
+           }
+   
+       .input:hover{
+        border:2px solid black;
+        }
+     button{
+           padding:7px;
+           width:100%;
+           background:green;
+           border:1px solid black;
+           font-weight:bolder;
+           font-size:18px;
+           margin:5px 0;
+           border-radius:5px;
+           
+           }
+           .input:focus { 
+              border-color: green;
+           }
+           
+           button:active { 
+           transform: scale(0.95); 
+           }
+     
+     button:hover{
+             box-shadow:1px 1px 20px 1px black;
+               background:black;
+               color:green;
+               }
+        .cancel-btn {
+         width:30%;
+         }
+</style>
+</head>
+<body>
+<h2> Login Form </h2>
+<button class="login-btn" > login </button>
+<br>
+<br>
+<div class="form-card" >
+<img src="lucky.jpg">
+<form>
+<label for="usrn ">Username:</label><br>
+<input class="input"  type="text" required="required"  placeholder="Enter Your Username"  pattern="(0-9a-z){15}">
+<br>
+<label for="pass" >Passsword : </label><br>
+<input class="input"  type="password" placeholder="Enter Your Password"  maxlength="10" pattern="(0-9,a-z){12}"  >
+<br>
+<button> login </button> 
+<br>
+<input type="checkbox" > remember me Forgot <a href="#" >password</a>
+<br>
+<button class="cancel-btn" > cancel </button> 
+
+</form>
+</div>
+</body>
+</html>
